@@ -99,8 +99,11 @@
 import express from "express";
 import ranking from "./models/playerSchema.js";
 import connection from "./config/conn.js";
+import dotenv from "dotenv";
+
 
 const app = express();
+dotenv.config();
 connection();
 
 app.use(express.json());
